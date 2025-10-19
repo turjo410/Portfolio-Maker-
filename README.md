@@ -173,6 +173,41 @@ Your application is now running:
 
 ---
 
+## 🌐 Deployment
+
+### Deploy to Production (100% FREE)
+
+We provide complete deployment guides for free hosting platforms:
+
+```bash
+# Quick deploy using our script
+./deploy.sh
+```
+
+**Recommended Stack:**
+- **Frontend**: Vercel (Unlimited bandwidth, global CDN)
+- **Backend**: Render (500 hours/month free tier)
+- **Database**: MongoDB Atlas (512MB free storage)
+
+### 📖 Detailed Deployment Guide
+
+See **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** for:
+- ✅ Step-by-step MongoDB Atlas setup
+- ✅ Render backend deployment
+- ✅ Vercel frontend deployment
+- ✅ Alternative options (Railway, Cyclic)
+- ✅ CORS configuration
+- ✅ Environment variables setup
+- ✅ Auto-deploy on git push
+
+### Quick Links:
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) - Free database
+- [Render](https://render.com/) - Backend hosting
+- [Vercel](https://vercel.com/) - Frontend hosting
+- [Railway](https://railway.app/) - Alternative backend hosting
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend Technologies
