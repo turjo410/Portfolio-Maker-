@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+
+# Build files
+dist
+build
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Documentation (exclude from git except README)
+MANUAL_USER_CREATION_GUIDE.md
+BACKEND_SETUP_GUIDE.md
+TESTING_GUIDE.md
+FINAL_IMPLEMENTATION.md
+THEME_UPDATE.md
+FEATURES_UPDATE.md
+VALIDATION_UPDATE.md
+*.md
+!README.md
+
+# Scripts
+create-test-users.js
+setup-backend.sh
