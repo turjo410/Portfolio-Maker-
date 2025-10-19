@@ -10,6 +10,7 @@ build
 # Environment
 .env
 .env.local
+# Keep .env.production and .env.development for deployment configs
 
 # Logs
 *.log
@@ -23,7 +24,7 @@ Thumbs.db
 .vscode
 .idea
 
-# Documentation (exclude from git except README)
+# Documentation (exclude from git except README and DEPLOYMENT_GUIDE)
 MANUAL_USER_CREATION_GUIDE.md
 BACKEND_SETUP_GUIDE.md
 TESTING_GUIDE.md
@@ -33,6 +34,7 @@ FEATURES_UPDATE.md
 VALIDATION_UPDATE.md
 *.md
 !README.md
+!DEPLOYMENT_GUIDE.md
 
 # Scripts
 create-test-users.js
