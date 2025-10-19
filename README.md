@@ -1,88 +1,174 @@
-# 🎨 Portfolio Maker# Portfolio Maker - Professional Portfolio Generator
+# 🎨 Portfolio Maker# 🎨 Portfolio Maker# Portfolio Maker - Professional Portfolio Generator
 
 
 
-> A modern, full-stack web application for creating professional portfolios with PDF export functionalityA modern, full-stack web application for creating professional portfolios with beautiful animations, multiple career-specific templates, and PDF export functionality.
+> Create professional portfolios with an intuitive multi-step form and export as PDF
 
 
 
-[![React](https://img.shields.io/badge/React-18.3.1-61dafb?logo=react)](https://reactjs.org/)## ✨ Features
+[![React](https://img.shields.io/badge/React-18-61dafb?logo=react)](https://reactjs.org/)> A modern, full-stack web application for creating professional portfolios with PDF export functionalityA modern, full-stack web application for creating professional portfolios with beautiful animations, multiple career-specific templates, and PDF export functionality.
 
 [![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js)](https://nodejs.org/)
 
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)](https://www.mongodb.com/)### Core Features
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)](https://www.mongodb.com/)
 
-[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite)](https://vitejs.dev/)- 🎨 **Beautiful Animated UI** - Smooth transitions and engaging animations using Framer Motion and custom WebGL effects
 
-- 🎯 **8 Career-Specific Templates** - Unique visual designs for:
+
+## ✨ Features[![React](https://img.shields.io/badge/React-18.3.1-61dafb?logo=react)](https://reactjs.org/)## ✨ Features
+
+
+
+- **6-Step Form** - Easy portfolio creation with progress tracking[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js)](https://nodejs.org/)
+
+- **Smart Validation** - Visual ✓/✗ indicators for form completion
+
+- **PDF Export** - Download professional PDF portfolios[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)](https://www.mongodb.com/)### Core Features
+
+- **Secure Auth** - JWT-based user authentication
+
+- **Animated UI** - Interactive backgrounds with smooth transitions[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite)](https://vitejs.dev/)- 🎨 **Beautiful Animated UI** - Smooth transitions and engaging animations using Framer Motion and custom WebGL effects
+
+- **Skill Library** - 60+ pre-defined skills across categories
+
+- **Image Upload** - Profile picture with drag-and-drop- 🎯 **8 Career-Specific Templates** - Unique visual designs for:
+
+- **Auto-Save** - Data persists in MongoDB
 
 ## ✨ Features  - **Student** - Academic-focused with education highlights
 
+## 🚀 Quick Start
+
   - **Teacher** - Professional layout with teaching credentials
 
-### 🎯 Core Functionality  - **Designer** - Creative portfolio with visual emphasis
+### Prerequisites
+
+- Node.js (v16+)### 🎯 Core Functionality  - **Designer** - Creative portfolio with visual emphasis
+
+- MongoDB (v5+)
 
 - **Multi-Step Form Wizard** - Intuitive 6-step portfolio creation process  - **Architect** - Structural design with project showcases
 
+### Installation
+
 - **Real-time Validation** - Smart form validation with visual feedback  - **Developer** - Tech-focused with GitHub integration
 
-- **PDF Export** - Generate professional PDF portfolios instantly  - **Professional** - Corporate two-column layout
+```bash
 
-- **User Authentication** - Secure JWT-based login system  - **Business** - Executive professional template
+# Clone repository- **PDF Export** - Generate professional PDF portfolios instantly  - **Professional** - Corporate two-column layout
 
-- **Responsive Design** - Works flawlessly on all devices  - **Photographer** - Visual storytelling layout
+git clone https://github.com/turjo410/Portfolio-Maker-.git
+
+cd Portfolio-Maker-- **User Authentication** - Secure JWT-based login system  - **Business** - Executive professional template
+
+
+
+# Install dependencies- **Responsive Design** - Works flawlessly on all devices  - **Photographer** - Visual storytelling layout
+
+npm install
 
 - 📸 **Profile Image Upload** - Add your professional photo with drag-and-drop support
 
-### 🎨 User Experience- 📝 **Multi-Step Form** - Intuitive slideshow-style form with 6 steps:
+# Configure environment (.env file)
 
-- **Animated Background** - GSAP-powered interactive dot grid  1. Personal Information (with image upload)
+PORT=5001### 🎨 User Experience- 📝 **Multi-Step Form** - Intuitive slideshow-style form with 6 steps:
 
-- **Smart Progress Tracking** - Visual indicators for completed/incomplete sections  2. Skills & Expertise
+MONGODB_URI=mongodb://localhost:27017/portfolio-maker
 
-- **Skill Dropdowns** - Pre-populated skill categories with custom input option  3. Education
+JWT_SECRET=your_secret_key- **Animated Background** - GSAP-powered interactive dot grid  1. Personal Information (with image upload)
+
+
+
+# Start MongoDB- **Smart Progress Tracking** - Visual indicators for completed/incomplete sections  2. Skills & Expertise
+
+brew services start mongodb-community  # macOS
+
+# OR- **Skill Dropdowns** - Pre-populated skill categories with custom input option  3. Education
+
+sudo systemctl start mongod  # Linux
 
   - 30+ Technical Skills  4. Work Experience
 
-  - 15+ Soft Skills  5. Projects
+# Run application
+
+npm run dev  - 15+ Soft Skills  5. Projects
+
+```
 
   - 15+ Languages  6. Review & Preview
 
+Visit **http://localhost:3000** to start creating your portfolio!
+
 - **Profile Image Upload** - Drag-and-drop image support with preview- 🔐 **Smart Authentication Flow** - Create portfolios freely, login only required for PDF download
+
+## 📋 Tech Stack
 
 - **Form Persistence** - Your data is saved as you work- 💾 **Data Persistence** - MongoDB backend for saving portfolio data
 
-- 📄 **PDF Export** - Download your portfolio as a professional PDF with career-specific styling
+**Frontend:** React, Vite, Framer Motion, GSAP, Zustand  
+
+**Backend:** Node.js, Express, MongoDB, Mongoose, JWT  - 📄 **PDF Export** - Download your portfolio as a professional PDF with career-specific styling
+
+**Styling:** Custom CSS with modern design patterns
 
 ### 📋 Portfolio Sections- 📱 **Responsive Design** - Works perfectly on all devices
 
+## 🎯 Usage
+
 1. **Personal Information** - Contact details, profile picture, professional summary- 🌈 **Light Mode** - Clean, minimalistic light theme design
 
-2. **Skills & Expertise** - Technical skills, soft skills, and languages- ⚡ **Fast & Modern** - Built with React, Vite, and Express.js
+1. **Create Account** - Register or login
+
+2. **Fill Form** - Complete 6 steps (Personal Info → Skills → Education → Experience → Projects → Review)2. **Skills & Expertise** - Technical skills, soft skills, and languages- ⚡ **Fast & Modern** - Built with React, Vite, and Express.js
+
+3. **Generate PDF** - Preview and download your portfolio
 
 3. **Education Background** - Academic qualifications (minimum 2 required)
 
-4. **Work Experience** - Professional history (minimum 1 required)## 🚀 Tech Stack
+### Validation Requirements
 
-5. **Projects** - Showcase your best work
+- Personal info: Name, email, phone, DOB, summary4. **Work Experience** - Professional history (minimum 1 required)## 🚀 Tech Stack
 
-6. **Review & Generate** - Preview and download as PDF### Frontend
+- Education: Minimum 2 entries (College + University)
 
-- **React 18** - Modern UI library
+- Experience: Minimum 1 entry5. **Projects** - Showcase your best work
 
-### 🛡️ Advanced Validation- **Vite** - Next-generation frontend tooling
 
-- ✅ Mandatory field enforcement- **Framer Motion** - Advanced animations
 
-- ✅ Visual step completion indicators (✓/✗)- **OGL** - WebGL library for Plasma background effect
+## 🤝 Contributing6. **Review & Generate** - Preview and download as PDF### Frontend
 
-- ✅ Auto-navigation to error locations- **Zustand** - State management
 
-- ✅ Minimum entry requirements for education and experience- **React Router** - Navigation
 
-- ✅ Real-time error feedback- **Axios** - HTTP client
+Pull requests are welcome! Fork the repo, create a feature branch, and submit a PR.- **React 18** - Modern UI library
 
-- **jsPDF & html2canvas** - PDF generation
+
+
+## 👨‍💻 Author### 🛡️ Advanced Validation- **Vite** - Next-generation frontend tooling
+
+
+
+**Turjo Khan** - [@turjo410](https://github.com/turjo410)- ✅ Mandatory field enforcement- **Framer Motion** - Advanced animations
+
+
+
+## 📝 License- ✅ Visual step completion indicators (✓/✗)- **OGL** - WebGL library for Plasma background effect
+
+
+
+MIT License - Open source and free to use- ✅ Auto-navigation to error locations- **Zustand** - State management
+
+
+
+---- ✅ Minimum entry requirements for education and experience- **React Router** - Navigation
+
+
+
+<div align="center">- ✅ Real-time error feedback- **Axios** - HTTP client
+
+  <p>Made with ❤️ by Turjo Khan</p>
+
+  <p>⭐ Star this repo if you find it helpful!</p>- **jsPDF & html2canvas** - PDF generation
+
+</div>
 
 ## 🚀 Tech Stack
 
