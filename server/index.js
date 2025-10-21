@@ -10,6 +10,7 @@ const app = express();
 // CORS Configuration
 const allowedOrigins = [
   'http://localhost:3000',
+  'https://portfolio-maker-sepia-psi.vercel.app',
   'https://portfolio-maker.vercel.app',
   'https://portfolio-maker-turjo410s-projects.vercel.app',
   process.env.FRONTEND_URL,
