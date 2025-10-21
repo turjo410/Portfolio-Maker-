@@ -30,7 +30,7 @@ This guide will help you deploy Portfolio Maker for **FREE** with full functiona
    - Go to "Database Access"
    - Click "Add New Database User"
    - Username: `portfoliomaker`
-   - Password: Generate secure password (save it!)
+   - Password: Generate secure password (save it!) - TurjoTurjo123
    - Role: Atlas Admin
    - Click "Add User"
 
@@ -46,7 +46,7 @@ This guide will help you deploy Portfolio Maker for **FREE** with full functiona
    - Copy connection string
    - Replace `<password>` with your password
    - Example: `mongodb+srv://portfoliomaker:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/portfolio-maker?retryWrites=true&w=majority`
-
+    mongodb+srv://portfoliomaker:<TurjoTurjo123>@cluster0.oobnxm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 ---
 
 ### 2️⃣ Deploy Backend (Render)

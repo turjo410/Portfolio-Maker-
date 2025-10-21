@@ -7,8 +7,37 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// CORS Configuration
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://portfolio-maker.vercel.app',
+  'https://portfolio-maker-turjo410s-projects.vercel.app',
+  process.env.FRONTEND_URL,
+  /\.vercel\.app$/
+];
+
+app.use(cors({
+  origin: function(origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    // Check if origin is in allowed list or matches pattern
+    const isAllowed = allowedOrigins.some(allowed => {
+      if (typeof allowed === 'string') return allowed === origin;
+      if (allowed instanceof RegExp) return allowed.test(origin);
+      return false;
+    });
+    
+    if (isAllowed) {
+      callback(null, true);
+    } else {
+      console.log('Blocked origin:', origin);
+      callback(null, true); // Allow all origins for now (change in production)
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
